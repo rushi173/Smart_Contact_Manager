@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+  <head>
+    <title>Contact Us Page</title>
+  </head>
+  <body>
+    <section id="content" class="container mx-auto my-12 p-8">
+      <!-- Hero Section -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">Get in Touch with Us</h1>
+        <p class="text-lg text-gray-600 dark:text-gray-300">
+          We'd love to hear from you! Whether you have a question about our services, need assistance, or just want to give feedback, we're here to help.
+        </p>
+      </div>
+    
+      <!-- Contact Form Section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Contact Information -->
+        <div>
+          <h2 class="text-3xl font-semibold text-gray-800 dark:text-white mb-6">Contact Information</h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            Reach out to us through any of the following channels:
+          </p>
+          <div class="flex items-center mb-4">
+            <i class="fa-solid fa-phone text-blue-600 dark:text-blue-400 text-2xl"></i>
+            <span class="ml-4 text-gray-800 dark:text-white">+91 9022717603</span>
+          </div>
+          <div class="flex items-center mb-4">
+            <i class="fa-solid fa-envelope text-blue-600 dark:text-blue-400 text-2xl"></i>
+            <span class="ml-4 text-gray-800 dark:text-white">rushiypatil009@gmail.com</span>
+          </div>
+          <div class="flex items-center mb-4">
+            <i class="fa-solid fa-map-marker-alt text-blue-600 dark:text-blue-400 text-2xl"></i>
+            <span class="ml-4 text-gray-800 dark:text-white">Shirpur, Dhule, India</span>
+          </div>
+        </div>
+    
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-3xl font-semibold text-gray-800 dark:text-white mb-6">Send Us a Message</h2>
+          <form class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-800 dark:text-white font-medium mb-2">Your Name</label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-gray-200" placeholder="John Doe">
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-800 dark:text-white font-medium mb-2">Your Email</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-gray-200" placeholder="you@example.com">
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-gray-800 dark:text-white font-medium mb-2">Your Message</label>
+              <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-gray-200" placeholder="Your message here..."></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800">Send Message</button>
+          </form>
+        </div>
+      </div>
+    
+      <!-- Call to Action -->
+<div class="mt-12 text-center">
+  <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">We’re Here to Help!</h2>
+  <p class="text-lg text-gray-600 dark:text-gray-300 mb-8"> <!-- Increased margin-bottom here -->
+    Have any questions or need support? Don’t hesitate to reach out.
+  </p>
+  <a
+    href="/support"
+    class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-3 text-center mr-3 mb-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800"
+  >
+    Contact Support
+  </a>
+</div>
+
+    </section>
+    
+    <script>
+      console.log("Home page");
+    </script>
+  </body>
+</html>

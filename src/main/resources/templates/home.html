@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+  <head>
+    <title>Home page</title>
+  </head>
+  <body>
+    <div id="content" class="container mx-auto my-8 p-4">
+      <!-- Hero Section -->
+      <div class="text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-12 rounded-lg shadow-lg">
+        <h1 class="text-5xl font-extrabold mb-4">Welcome to Smart Contact Manager</h1>
+        <p class="text-xl mb-6">
+          Manage your contacts efficiently and effortlessly with SCM. 
+          Organize, update, and connect with your contacts like never before.
+        </p>
+        <a
+          href="/register"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-8 py-4 transition transform hover:scale-105"
+        >
+          Get Started
+        </a>
+      </div>
+    
+      <!-- Features Section -->
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Feature 1 -->
+        <div class="text-center p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg transition transform hover:scale-105">
+          <img src="/images/feature1.png" alt="Feature 1" class="mx-auto mb-4 h-20">
+          <h3 class="text-3xl font-semibold mb-2">Easy to Use</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Our user-friendly interface makes managing contacts a breeze.
+          </p>
+        </div>
+    
+        <!-- Feature 2 -->
+        <div class="text-center p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg transition transform hover:scale-105">
+          <img src="/images/feature2.png" alt="Feature 2" class="mx-auto mb-4 h-20">
+          <h3 class="text-3xl font-semibold mb-2">Secure</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Your data is protected with industry-leading security measures.
+          </p>
+        </div>
+    
+        <!-- Feature 3 -->
+        <div class="text-center p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg transition transform hover:scale-105">
+          <img src="/images/feature3.png" alt="Feature 3" class="mx-auto mb-4 h-20">
+          <h3 class="text-3xl font-semibold mb-2">Customizable</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Tailor the app to your needs with customizable options.
+          </p>
+        </div>
+      </div>
+    
+      <!-- Benefits Section -->
+      <div class="mt-16">
+        <h2 class="text-4xl font-bold text-center mb-12">Why Choose SCM?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <!-- Benefit 1 -->
+          <div class="flex items-center p-6 bg-blue-50 dark:bg-blue-900 rounded-lg shadow-lg">
+            <div class="p-4 bg-blue-100 dark:bg-blue-800 rounded-full">
+              <i class="fa-solid fa-user-friends text-blue-600 dark:text-blue-300 text-4xl"></i>
+            </div>
+            <div class="ml-6">
+              <h3 class="text-2xl font-semibold">Manage Contacts</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Keep all your contacts organized and easily accessible.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Benefit 2 -->
+          <div class="flex items-center p-6 bg-green-50 dark:bg-green-900 rounded-lg shadow-lg">
+            <div class="p-4 bg-green-100 dark:bg-green-800 rounded-full">
+              <i class="fa-solid fa-lock text-green-600 dark:text-green-300 text-4xl"></i>
+            </div>
+            <div class="ml-6">
+              <h3 class="text-2xl font-semibold">Enhanced Security</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Protect your data with top-notch security protocols.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Benefit 3 -->
+          <div class="flex items-center p-6 bg-yellow-50 dark:bg-yellow-900 rounded-lg shadow-lg">
+            <div class="p-4 bg-yellow-100 dark:bg-yellow-800 rounded-full">
+              <i class="fa-solid fa-cogs text-yellow-600 dark:text-yellow-300 text-4xl"></i>
+            </div>
+            <div class="ml-6">
+              <h3 class="text-2xl font-semibold">Highly Customizable</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Customize the app to suit your specific needs and preferences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Call to Action Section -->
+      <div class="mt-16 text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold mb-6">Get Started with SCM Today!</h2>
+        <p class="text-xl mb-6">
+          Join the growing number of users who trust SCM for their contact management needs.
+        </p>
+        <a
+          href="/register"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-8 py-4 transition transform hover:scale-105"
+        >
+          Sign Up Now
+        </a>
+      </div>
+    </div>
+    
+    <script>
+      console.log("Home page");
+    </script>
+  </body>
+</html>

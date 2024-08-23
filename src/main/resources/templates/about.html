@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+  <head>
+    <title>About Page</title>
+  </head>
+  <body>
+    <div id="content" class="container mx-auto my-16 p-8 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+      <!-- About Us Section -->
+      <div class="text-center">
+        <h1 class="text-5xl font-extrabold text-gray-900 dark:text-white mb-6">About Smart Contact Manager</h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          Smart Contact Manager is the next generation contact management tool, designed to make your life easier. Organize, update, and secure your contacts with the latest features and best practices in the industry.
+        </p>
+      </div>
+    
+      <!-- Our Mission -->
+      <div class="mt-16 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6">Our Mission</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          Our mission is to provide a user-friendly, secure, and customizable solution for managing your contacts, ensuring that you stay connected with the people who matter most.
+        </p>
+        <img src="/images/mission.jpg" alt="Mission Image" class="mt-8 w-full h-64 object-cover rounded-lg shadow-md">
+      </div>
+    
+      <!-- Core Values -->
+      <div class="mt-16">
+        <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8">Our Core Values</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Value 1 -->
+          <div class="p-6 bg-blue-50 dark:bg-blue-800 rounded-lg text-center shadow-md">
+            <div class="text-5xl mb-4">
+              <i class="fa-solid fa-user-friends text-blue-600 dark:text-blue-300"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">User-Friendly</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              We prioritize ease of use to make sure everyone can manage their contacts effectively.
+            </p>
+          </div>
+    
+          <!-- Value 2 -->
+          <div class="p-6 bg-green-50 dark:bg-green-800 rounded-lg text-center shadow-md">
+            <div class="text-5xl mb-4">
+              <i class="fa-solid fa-lock text-green-600 dark:text-green-300"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Security</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              Protecting your data is our top priority, using industry-leading security measures.
+            </p>
+          </div>
+    
+          <!-- Value 3 -->
+          <div class="p-6 bg-yellow-50 dark:bg-yellow-800 rounded-lg text-center shadow-md">
+            <div class="text-5xl mb-4">
+              <i class="fa-solid fa-cogs text-yellow-600 dark:text-yellow-300"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Customization</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              Tailor the app to your specific needs with a wide range of customizable options.
+            </p>
+          </div>
+    
+          <!-- Value 4 -->
+          <div class="p-6 bg-purple-50 dark:bg-purple-800 rounded-lg text-center shadow-md">
+            <div class="text-5xl mb-4">
+              <i class="fa-solid fa-lightbulb text-purple-600 dark:text-purple-300"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Innovation</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              We strive to innovate and improve, providing you with the latest tools and features.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Team Section -->
+      <div class="mt-16 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-8">Meet the Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Team Member 1 -->
+          <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <img src="/images/team1.jpg" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Rushikesh Patil</h3>
+            <p class="text-gray-600 dark:text-gray-400">CEO & Founder</p>
+          </div>
+    
+          <!-- Team Member 2 -->
+          <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <img src="/images/team2.jpg" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Yashodip Beldar</h3>
+            <p class="text-gray-600 dark:text-gray-400">Chief Technology Officer</p>
+          </div>
+    
+          <!-- Team Member 3 -->
+          <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <img src="/images/team3.jpg" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Harsh Jain</h3>
+            <p class="text-gray-600 dark:text-gray-400">Head of Marketing</p>
+          </div>
+    
+          <!-- Team Member 4 -->
+          <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <img src="/images/team4.jpg" alt="Team Member 4" class="w-32 h-32 rounded-full mx-auto mb-4">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Samarth Kasar</h3>
+            <p class="text-gray-600 dark:text-gray-400">Lead Developer</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Call to Action -->
+      <div class="mt-20 text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-6">Join Us Today!</h2>
+        <p class="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+          Become a part of the Smart Contact Manager community and experience the future of contact management. Sign up now and get started!
+        </p>
+        <a
+          href="/register"
+          class="inline-block text-white bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-8 py-4 text-center mr-3 mb-2 dark:focus:ring-blue-800"
+        >
+          Get Started
+        </a>
+      </div>
+    </div>
+    
+    <script>
+      console.log("about page");
+    </script>
+    <script>
+      console.log("second about page script");
+    </script>
+  </body>
+</html>

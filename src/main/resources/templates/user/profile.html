@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+  <head>
+    <title th:text="${loggedInUser.uname} + ' | SCM'">Profile Page</title>
+  </head>
+  <body>
+    <div id="content">
+      <!-- Sidebar: only display if user is logged in -->
+      <div th:if="${loggedInUser}">
+        <div th:replace="~{user/sidebar :: sidebar}"></div>
+      </div>
+
+      <div class="sm:pl-64 pt-20" style="height: 1000px">
+        <div class="flex items-center justify-center md:pt-32 flex-col">
+          <!-- Profile card -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-2xl w-full">
+            <div class="flex flex-col items-center">
+                <!-- Profile Picture -->
+                <img th:src="@{${loggedInUser.uprofilePic}}" alt="Profile Photo" class="w-44 h-44 rounded-full shadow-lg object-cover mb-4">
+                
+                <!-- User Name -->
+                <h2 class="text-2xl font-semibold mb-2" th:text="${loggedInUser.uname}">User Name</h2>
+                
+                <!-- Email -->
+                <p class="text-gray-600 mb-2" th:text="${loggedInUser.uemail}">user.email@example.com</p>
+                
+                <!-- Phone Number -->
+                <p class="text-gray-600 mb-2" th:text="${loggedInUser.uponeNo}">123-456-7890</p>
+                
+                <!-- About -->
+                <p class="text-gray-600 mb-4 text-center" th:text="${loggedInUser.uabout}">About the user...</p>
+                
+                <!-- Verification Status -->
+                <div class="w-full flex justify-between">
+                    <p class="text-sm text-gray-500">
+                      Email Verified: 
+                      <span class="font-medium text-gray-700" th:text="${loggedInUser.emailVerified ? 'YES' : 'NO'}">No</span>
+                    </p>
+                    <p class="text-sm text-gray-500">
+                      Phone Verified: 
+                      <span class="font-medium text-gray-700" th:text="${loggedInUser.phoneVerified ? 'YES' : 'NO'}">No</span>
+                    </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      console.log("This is the profile page");
+    </script>
+  </body>
+</html>
